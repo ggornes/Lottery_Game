@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane id="AnchorPane" prefHeight="465.0" prefWidth="346.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Label fx:id="label1" layoutX="14.0" layoutY="14.0" minHeight="16" minWidth="69" text="Please input your numbers:" />
+        <Label fx:id="lblUserNumbers" layoutX="120.0" layoutY="95.0" text="" />
+        <Label fx:id="lblPrizeMsg" layoutX="120.0" layoutY="227.0" text="Lottery Result:" />
+        <Label fx:id="lblPrizeResult" layoutX="120.0" layoutY="270.0" text="" />
+        <Label fx:id="lblWinningNumbers" layoutX="97.0" layoutY="350.0" prefHeight="26.0" prefWidth="183.0" text="" />
+        <TextField fx:id="txtNum0" layoutX="40.0" layoutY="55.0" prefHeight="26.0" prefWidth="34.0" />
+        <TextField fx:id="txtNum1" layoutX="80.0" layoutY="55.0" prefHeight="26.0" prefWidth="34.0" />
+        <TextField fx:id="txtNum2" layoutX="120.0" layoutY="55.0" prefHeight="26.0" prefWidth="34.0" />
+        <TextField fx:id="txtNum3" layoutX="160.0" layoutY="55.0" prefHeight="26.0" prefWidth="34.0" />
+        <TextField fx:id="txtNum4" layoutX="200.0" layoutY="55.0" prefHeight="26.0" prefWidth="34.0" />
+        <TextField fx:id="txtNum5" layoutX="240.0" layoutY="55.0" prefHeight="26.0" prefWidth="34.0" />
+        <TextField fx:id="txtNum6" layoutX="280.0" layoutY="55.0" prefHeight="26.0" prefWidth="34.0" />
+
+        <Line endX="208.0" layoutX="120.0" layoutY="130.0" startX="-100.0" />
+        <Button fx:id="btnPrint" layoutX="120.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Run Lottery" />
+        <Button fx:id="btnRevealWinNum" layoutX="92.0" layoutY="407.0" mnemonicParsing="false" onAction="#toggleNumbers" text="Show winning numbers" />
+    </children>
+</AnchorPane>
