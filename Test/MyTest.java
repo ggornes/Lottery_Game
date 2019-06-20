@@ -6,54 +6,6 @@ import java.util.Arrays;
 
 public class MyTest {
 
-/*
-
-    @Test
-    public void firstTest() {
-        assertTrue(true);
-    }
-
-    @Test
-    public void TestConcatWith2Params(){
-        //arrange
-        String p1 = "Hello ";
-        String p2 = "World";
-        String expected = p1+p2;
-        // act
-        String result = TestUtils.concat(p1,p2);
-        //assert
-        assertEquals(expected,result);
-
-    }
-
-    @Test
-    public void testDefaultIfNull() {
-        String result = TestUtils.getDefaultIfNull(null, "world");
-        assertNotNull(result);
-        assertEquals("world", result);
-    }
-
-
-
-*/
-
-/*
-
-    @Test
-    public void testConvertToInt() {
-        // arrange
-        String myStr = "11";
-        int expected = 11;
-        // act
-        int result = TestUtils.convertToInt(myStr);
-        // assert
-        assertEquals(expected, result);
-
-
-    }
-*/
-
-
 
     @Test
     public void testValidation() {
