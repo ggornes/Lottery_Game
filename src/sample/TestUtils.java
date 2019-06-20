@@ -1,60 +1,12 @@
 package sample;
 
-/* String Utility methods to be tested using JUnit5
- * Source: https://github.com/howtoprogram/junit5-examples
+import java.util.Arrays;
+
+/* String Utility methods to be tested using JUnit4
  */
-public class StringUtils {
-
-    public static Double convertToDouble(String str) {
-
-        if (str == null) {
-            return null;
-        }
-        return Double.valueOf(str);
-    }
+public class TestUtils {
 
 
-    // my string utility
-    public static Integer convertToInt(String str) {
-
-        if (str == null) {
-            return null;
-        }
-        return Integer.valueOf(str);
-    }
-
-
-    public static boolean isNullOrBlank(String st) {
-
-        return st == null || st.trim().length() == 0;
-
-    }
-
-
-    public static String getDefaultIfNull(final String st, final String defaultSt) {
-
-        return st == null ? defaultSt : st;
-
-    }
-
-
-    public static String concat(String... sts) {
-
-        String retVal = null;
-
-        if (sts != null && sts.length > 0) {
-            StringBuilder sb = new StringBuilder();
-            for (String st : sts) {
-                if (st != null) {
-                    sb.append(st);
-                }
-            }
-            retVal = sb.toString();
-        }
-
-        return retVal;
-
-    }
 
 
     public static boolean validateNumbers(String txtNum[]) {
@@ -85,4 +37,34 @@ public class StringUtils {
             }
         } return val;
     }
+
+
+    public static boolean duplicateNumbers(int [] pnumbers) {
+
+        for (int i = 0; i < pnumbers.length-1; i++) {
+            if (pnumbers[i] == pnumbers[i+1]) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static int lotteryResult(int [] uNumbers, int [] winningNumbers) {
+        int result = 0;
+        int counter = 0;
+
+        for (int i=0; i<uNumbers.length;i++) {
+
+            result = Arrays.binarySearch(winningNumbers, uNumbers[i]);
+            System.out.println(result);
+            if (result > -1) {
+                counter++;
+            }
+        }
+        return counter;
+
+    }
+
+
+
 }

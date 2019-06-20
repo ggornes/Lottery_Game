@@ -215,6 +215,12 @@ public class Controller implements Initializable {
         return false;
     }
 
+
+    /**
+     * Method to compare the user selected numbers with the winning lottery numbers. The method prints to the UI
+     * how many user numbers matches with the winning numbers.
+     * @param uNumbers Should be sorted and with no duplicates.
+     */
     public void lotteryResult(int [] uNumbers) {
         int result = 0;
         int counter = 0;
